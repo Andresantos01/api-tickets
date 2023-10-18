@@ -31,3 +31,13 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 - Composer version 2.6.5 LTS
 - PHP version 8.2.4
 - MySQL version 8.1
+
+### HELPERS
+- composer require tymon/jwt-auth:*
+- php artisan jwt:secret
+- php artisan make:migration create_users_table
+- php artisan migrate
+- php artisan make:seeder UserSeeder
+- php artisan db:seed
+- Manually create LumenAuthController in the controllers folder.
+- php -S localhost:3000 -t public 
