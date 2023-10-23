@@ -23,6 +23,11 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->post('login', 'LumenAuthController@login');
     $router->post('logout', 'LumenAuthController@logout');
     $router->post('refresh', 'LumenAuthController@refresh');
+
     $router->post('me', 'LumenAuthController@me');
-    $router->get('home', 'AnotherController@home');
+
+    $router->get('home', 'HomeController@listar');
+    $router->post('home/criar', 'HomeController@criar');
+    $router->put('home/editar', 'HomeController@editar');
+    $router->delete('home/deletar', 'HomeController@deletar');
 });
